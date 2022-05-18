@@ -1,0 +1,19 @@
+﻿Build started 05/09/2016 2:49:59.
+     1>Project "D:\GameHack\Base & Tools\Base\VS2010\SF2\NEWDEV\XFilesHack-SF2\XFilesHack-SF2\XFilesHack-SF2.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "D:\GameHack\Base & Tools\Base\VS2010\SF2\NEWDEV\XFilesHack-SF2\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\XFilesHack-SF2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LoadDll.cpp XFilesHack.cpp
+         XFilesHack.cpp
+         LoadDll.cpp
+     1>d:\gamehack\base & tools\base\vs2010\sf2\newdev\xfileshack-sf2\xfileshack-sf2\loaddll.cpp(536): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         Generating Code...
+     1>d:\gamehack\base & tools\base\vs2010\sf2\newdev\xfileshack-sf2\xfileshack-sf2\sf2-sdk\sdk_headers\sfgame_functions.h(243792): fatal error C1128: number of sections exceeded object file format limit : compile with /bigobj
+     1>Done Building Project "D:\GameHack\Base & Tools\Base\VS2010\SF2\NEWDEV\XFilesHack-SF2\XFilesHack-SF2\XFilesHack-SF2.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:27.05

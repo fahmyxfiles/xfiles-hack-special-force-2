@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D06215B-3DDD-4F3A-AA7B-71C22B8E5788}</ProjectGuid>
+    <RootNamespace>XFilesHackSF2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\Software\Additionals_W7\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>D:\Software\Additionals_W7\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseFunctions.h" />
+    <ClInclude Include="CMenu.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="CustomMenu\XNN\MenuStruct.h" />
+    <ClInclude Include="directInput.h" />
+    <ClInclude Include="directInput_.h" />
+    <ClInclude Include="ESPFunctions.h" />
+    <ClInclude Include="GameFunctions.h" />
+    <ClInclude Include="HackingFunctions.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="SF2-SDK\SdkHeaders.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\Core_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\Core_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\Core_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\Core_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\Engine_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\Engine_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\Engine_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\Engine_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\GameFramework_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\GameFramework_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\GameFramework_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\GameFramework_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\GFxUI_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\GFxUI_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\GFxUI_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\GFxUI_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\IpDrv_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\IpDrv_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\IpDrv_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\IpDrv_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\OnlineSubsystemPC_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\OnlineSubsystemPC_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\OnlineSubsystemPC_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\OnlineSubsystemPC_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\SFGameContent_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\SFGameContent_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\SFGameContent_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\SFGameContent_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\SFGame_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\SFGame_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\SFGame_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\SFGame_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\WinDrv_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\WinDrv_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\WinDrv_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\WinDrv_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\XAudio2_classes.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\XAudio2_functions.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\XAudio2_f_structs.h" />
+    <ClInclude Include="SF2-SDK\SDK_HEADERS\XAudio2_structs.h" />
+    <ClInclude Include="XFilesHack.h" />
+    <ClInclude Include="XorSTR.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XFilesHack.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
